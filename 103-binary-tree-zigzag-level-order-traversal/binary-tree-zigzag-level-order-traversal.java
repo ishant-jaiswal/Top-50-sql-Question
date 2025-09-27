@@ -38,11 +38,7 @@ class Solution {
                 if(node.right!=null) q.add(node.right);
             }
             flag=!flag;
-            List<Integer> temp=new ArrayList<>();
-            for(int n:list){
-                temp.add(n);
-            }
-            result.add(temp);
+            result.add(new ArrayList<>(list));
         }
         return result;
     }
